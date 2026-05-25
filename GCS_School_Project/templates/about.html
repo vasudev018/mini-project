@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About GCS School</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/darkmode.css') }}"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav>
+      <h1>GCS School</h1>
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/admission">Admission</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/login">Admin</a></li>
+      </ul>
+
+      <button onclick="toggleMode()">🌙</button>
+    </nav>
+
+    <!-- About Section -->
+
+    <section class="container">
+      <div class="card">
+        <h1>About GCS School</h1>
+
+        <br />
+
+        <p>
+          GCS School was established in the year <strong>2011</strong>
+          with the vision of providing quality education and creating a strong
+          foundation for students to achieve success in their future.
+        </p>
+
+        <br />
+
+        <p>
+          Since its establishment, GCS School has focused on academic
+          excellence, discipline, innovation, and personality development. The
+          school provides a safe and friendly learning environment where
+          students can improve their knowledge, creativity, leadership skills,
+          and confidence.
+        </p>
+
+        <br />
+
+        <p>
+          Our experienced teachers use modern teaching methods and digital
+          learning technologies to help students understand concepts easily and
+          effectively. Along with academics, we encourage sports, cultural
+          activities, and teamwork to support overall student development.
+        </p>
+
+        <br />
+
+        <p>
+          GCS School believes that education is the key to building a successful
+          future. Our mission is to guide every student toward knowledge,
+          discipline, and excellence.
+        </p>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+
+    <section class="container">
+      <div class="card">
+        <h2>Our Vision</h2>
+
+        <br />
+
+        <p>
+          To become a leading educational institution that inspires students to
+          achieve academic success, develop moral values, and become responsible
+          citizens.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+
+    <section class="container">
+      <div class="card">
+        <h2>Our Mission</h2>
+
+        <br />
+
+        <p>
+          To provide modern education, encourage innovation, support student
+          growth, and prepare students for future opportunities and challenges.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 GCS School | All Rights Reserved</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/darkmode.js') }}"></script>
+  </body>
+</html>

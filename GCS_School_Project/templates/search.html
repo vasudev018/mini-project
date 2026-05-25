@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Student</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Search Students</h1>
+
+        <form method="POST">
+          <input type="text" name="keyword" placeholder="Enter Student Name" />
+
+          <button type="submit">Search</button>
+        </form>
+
+        <br />
+
+        {% for student in students %}
+
+        <p>
+          {{ student }}
+
+          <a href="/delete/{{ student[0] }}">
+            <button>Delete</button>
+          </a>
+        </p>
+
+        <br />
+
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

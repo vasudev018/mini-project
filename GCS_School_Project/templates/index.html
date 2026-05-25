@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GCS School</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/darkmode.css') }}"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav>
+      <h1>GCS School</h1>
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/admission">Admission</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/login">Admin</a></li>
+      </ul>
+
+      <button onclick="toggleMode()">🌙</button>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome to GCS School</h2>
+
+        <p>Smart Student Data Management System with Modern Education.</p>
+
+        <a href="/admission">
+          <button>Apply Admission</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- About School -->
+
+    <section class="about-school">
+      <div class="card">
+        <h2>About Our School</h2>
+
+        <br />
+
+        <p>
+          GCS School is one of the leading educational institutions providing
+          quality education, digital learning, and student development programs.
+        </p>
+
+        <br />
+
+        <p>
+          Our mission is to create future leaders through modern teaching
+          methods, discipline, innovation, and practical learning.
+        </p>
+
+        <br />
+
+        <p>
+          We focus on academic excellence, sports, cultural activities, and
+          personality development for every student.
+        </p>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section class="features">
+      <h2>Our Features</h2>
+
+      <div class="feature-container">
+        <div class="card feature-card">
+          <h3>📘 Smart Classes</h3>
+
+          <p>Digital classrooms with modern learning technology.</p>
+        </div>
+
+        <div class="card feature-card">
+          <h3>🧑‍🎓 Student Management</h3>
+
+          <p>Secure student data collection and management system.</p>
+        </div>
+
+        <div class="card feature-card">
+          <h3>📊 Dashboard Reports</h3>
+
+          <p>Generate charts, PDF reports, and student analytics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="gallery">
+      <h2>School Campus</h2>
+
+      <div class="gallery-container">
+        <img
+          src="{{ url_for('static', filename='images/school.jpg') }}"
+          alt="School"
+        />
+
+        <img
+          src="{{ url_for('static', filename='images/school.jpg') }}"
+          alt="School"
+        />
+
+        <img
+          src="{{ url_for('static', filename='images/school.jpg') }}"
+          alt="School"
+        />
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact-home">
+      <div class="card">
+        <h2>Contact Information</h2>
+
+        <br />
+
+        <p><strong>Email:</strong> gcs.edu.gmail.com</p>
+
+        <p><strong>Phone:</strong> 9xxxxxxx1</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 GCS School | All Rights Reserved</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/darkmode.js') }}"></script>
+  </body>
+</html>
